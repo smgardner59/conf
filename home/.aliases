@@ -1,0 +1,17 @@
+# .alias
+# Shell aliases for my accounts.
+#
+
+# General alias to make typing easier.
+alias a='alias'
+
+#  Common command shortcuts 
+a ls='ls -FG'
+a ll='ls -alFG'
+a la='ls -aF'
+a l.='ls -dF .*'
+
+a so='source'
+# Frequently used more complex commands
+a logsnz='find . -maxdepth 1 -type f ! -empty -print'
+
