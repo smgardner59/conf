@@ -1,2 +1,60 @@
+# Global .gitignore file
+# scott m gardner
+# 2016-09-13
+###################################
+
+# build artifacts
+###################################
+*.class
+
+# Packages and libraries
+*.jar
+*.war
+*.ear
+*.gz
+*.zip
+*.tgz
+
+# Log files
+##################################
+*.log
+
+# OS generated files
+##################################
 .DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# Backup files and editor generated
+###################################
+*.bak
+*.swp
+
+# IDE generated files.
+##################################
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+.swo
+
+# Artifact Directories
+##################################
+/lib/
+/classes/
+/target/
+
+# Maven
+##################################
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
 
