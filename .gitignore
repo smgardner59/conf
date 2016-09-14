@@ -1,13 +1,33 @@
 # Global .gitignore file
 # scott m gardner
+# More patterns for different languages or project types
+# are at https://github.com/github/gitignore
 # 2016-09-13
-###################################
+##############################################################
 
-# build artifacts
-###################################
+# JVM build artifacts
+##############################################################
 *.class
 
+# Scala IDE and REPL artifacts
+##############################################################
+.scala_dependencies
+.worksheet
+
+# SBT
+##############################################################
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
 # Packages and libraries
+##############################################################
 *.jar
 *.war
 *.ear
@@ -16,18 +36,18 @@
 *.tgz
 
 # Log files
-##################################
+##############################################################
 *.log
 
 # OS generated files
-##################################
+##############################################################
 .DS_Store
 .DS_Store?
 ehthumbs.db
 Thumbs.db
 
 # Backup files and editor generated
-###################################
+##############################################################
 *.bak
 *.swp
 
@@ -42,13 +62,13 @@ nbproject
 .swo
 
 # Artifact Directories
-##################################
+##############################################################
 /lib/
 /classes/
 /target/
 
 # Maven
-##################################
+##############################################################
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
