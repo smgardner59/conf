@@ -1,17 +1,35 @@
-# .alias
-# Shell aliases for my accounts.
 #
+# .aliases
+#
+# 
 
-# General alias to make typing easier.
+# general aliases.
 alias a='alias'
 
-#  Common command shortcuts 
-a ls='ls -FG'
-a ll='ls -alFG'
-a la='ls -aF'
-a l.='ls -dF .*'
-
 a so='source'
-# Frequently used more complex commands
-a logsnz='find . -maxdepth 1 -type f ! -empty -print'
 
+# Quick directory aliases
+a win='cd /c/Users/scott.gardner'
+a proj='cd /c/project/resolve'
+a dbc='cd /c/Program Files (x86)/MySQL/MySQL Server 5.6/'
+a dbdt='cd /c/ProgramData/MySQL/MySQL Server 5.6'
+
+# Command shortcuts
+a runmy='/c/Program\ Files\ \(x86\)/MySQL/MySQL\ Server\ 5.6/bin/mysql'
+
+# Common command aliases
+#
+a whence='type -a'                    # where, of a sort
+a grep='grep --color'                 # show differences in colour
+a egrep='egrep --color=auto'          # show differences in colour
+a fgrep='fgrep --color=auto'          # show differences in colour
+
+# Directory listing shortcuts
+a ls='ls -hF --color=tty'  
+a ll='ls -AlFh --color=tty'
+a la='ls -AF --color=tty'
+a dir='ls --color=auto --format=vertical'
+
+# Viewers
+a more='less -r'
+a m='less -r'
