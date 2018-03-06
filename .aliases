@@ -1,6 +1,7 @@
 #
 # .aliases
 #
+# 2018-03-06 smg Added color versions for grep commands cgrep, cegrep
 # 
 
 # general aliases.
@@ -17,12 +18,15 @@ a dbdt='cd /c/ProgramData/MySQL/MySQL Server 5.6'
 # Command shortcuts
 a runmy='/c/Program\ Files\ \(x86\)/MySQL/MySQL\ Server\ 5.6/bin/mysql'
 
-# Common command aliases
+# Common command aliases with always used options.
 #
 a whence='type -a'                    # where, of a sort
-a grep='grep --color'                 # show differences in colour
+a grep='grep --color=auto'            # show differences in colour
 a egrep='egrep --color=auto'          # show differences in colour
 a fgrep='fgrep --color=auto'          # show differences in colour
+a cgrep='grep --color=always'         # always show color in output
+a cegrep='egrep --color=always'       # always show color in output
+a cfgrep='fgrep --color=always'       # always show color in output
 
 # Directory listing shortcuts
 a ls='ls -hF --color=tty'  

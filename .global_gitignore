@@ -1,0 +1,124 @@
+# .global_gitignore
+# 
+# This applied to all repositories on this machine. 
+#
+# 2018-01-08 scott m gardner -- created.
+
+##############################################################
+# Generic things to ignore.
+##############################################################
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+*.dmg
+
+### windows ###
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+*.exe
+*.exe~
+*.orig
+
+##############################################################
+# Archives and collections
+##############################################################
+* Generic archive formats
+*.7z
+*.zip
+*.gz
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.cab
+*.iso
+*.tar
+*.tar.gz
+*.tgz
+
+# VM image and container files
+*.ova
+*.deb
+*.rpm
+*.gem
+*.toast
+*.vcd
+rpm/
+.vagrant
+
+##############################################################
+# Eclipse, Idea, (and vi) etc
+##############################################################
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.classpath
+target/
+*/lib/**
+*/classes/**
+*/target/**
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.classpath
+.settings
+.swo
+
+##############################################################
+# Java and JVM
+##############################################################
+*.class
+*.jar
+*.war
+*.ear
+*.rar
+
+##############################################################
+# Maven
+##############################################################
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+##############################################################
+# Erlang
+##############################################################
+.eunit
+deps
+*.o
+*.beam
+*.plt
+erl_crash.dump
+ebin/*.beam
+rel/example_project
+.concrete/DEV_MODE
+.rebar
+
+##############################################################
+# Logs
+##############################################################
+**/logs
+*.log
