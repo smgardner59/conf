@@ -37,3 +37,8 @@ a dir='ls --color=auto --format=vertical'
 # Viewers
 a more='less -r'
 a m='less -r'
+
+# Java version and path setting aliases
+# 
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+
