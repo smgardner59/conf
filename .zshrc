@@ -20,7 +20,7 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -106,13 +106,18 @@ else
 fi
 
 # #####################################################################
+# Adding completions and sytax highlighting to zsh
+# #####################################################################
+
+# zsh completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # zsh syntax highlighting
-#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # #####################################################################
 # Setting up GIT for EZT development.
-export GIT_HOME=~/dev/ezt 
+# export GIT_HOME=~/dev/ezt 
 
 # #####################################################################
 # Java
@@ -136,30 +141,11 @@ export PATH="$HOME/opt/anaconda3/bin:$PATH"
 
 # #####################################################################
 # Docker startup
-# Use this to start the EZT applications
-a dkrezt='(cd ${GIT_HOME}/Docker/compose/eztexting; ./start)'
-
-# #####################################################################
-# Google Cloud SDK
-#
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/sgardner/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sgardner/dev/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/sgardner/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sgardner/dev/google-cloud-sdk/completion.zsh.inc'; fi
 
 # #####################################################################
 # Functions 
 # These will be kept here until I move them to a ~/bin directory.
 
-# Pretty Print the Path
-function path(){
-    old=$IFS
-    IFS=:
-    printf "%s\n" $PATH
-    IFS=$old
-}
 
 # #####################################################################
 #    END OF FILE
